@@ -37,3 +37,21 @@ O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus pr�
 - editarValorTabela: Permite ao usuário editar o valor de uma coluna em uma tabela.
 - deletarLinha: Permite ao usuário apagar uma linha específica de uma tabela.
 - deletarTabela: Permite ao usuário apagar uma tabela existente.
+
+## Contribuição
+o Projeto foi feito por Dinorah Farias e Flawbert Lorran, e foi feita a seguinte divisão por modulos:
+
+### Dinorah
+* criacao.c
+* estruturas.c
+* visualizacao.c
+
+### Flawbert
+* edicao.c
+* exclusao.c
+
+
+***
+
+
+## Compilação e execução
