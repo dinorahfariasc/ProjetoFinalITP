@@ -14,6 +14,28 @@ Cada módulo possui suas implementações correspondentes em arquivos `.c`.
 
 O arquivo principal `main.c` contém a função principal (`main()`) que interage com o usuário e coordena a execução das operações do sistema.
 
+### A estrutura base da tabela foi feita com os seguintes atributos:
+
+`char *nomeTabela`: Um ponteiro para uma string (char *) que armazena o nome da tabela. Essa string representa o nome identificador único atribuído à tabela.
+
+`char **nomesColunas`: Um ponteiro para ponteiro de string (char **) que representa o nome das colunas da tabela.
+
+`void ***listaValores`: Um ponteiro para ponteiro para ponteiro (void ***). Esse campo representa uma estrutura multidimensional que armazena os valores das células da tabela. A ideia é que esta estrutura possa acomodar diferentes tipos de dados. 
+
+`int nCol`: Um inteiro que indica o número total de colunas na tabela. Isso representa o comprimento do array nomesColunas
+
+`int numeroLinhas`: Um inteiro que indica o número de linhas na tabela. 
+
+`int *tiposColunas`: Um ponteiro para um array de inteiros (int *) que armazena os tipos de dados associados a cada coluna.
+
+A ideia desse projeto é usar essa estrutura para as operações com as tabelas, onde todas ficam armazenadas na variavel `todasTabelas` que é utilizada por todo código.
+
+Além das funcoes requeridas implementamos a opção de editar um valor de uma coluna em uma tabela, para em caso de algum erro o usuario não prescisa deletar a linha e criar outra. 
+
+
+***
+
+
 ## Dependências
 
 O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus próprios módulos:
@@ -33,7 +55,7 @@ O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus pr�
 - mostarTodas: Lista todas as tabelas existentes.
 - criarLinha: Permite ao usuário adicionar uma nova linha (registro) a uma tabela existente.
 - mostrarTabela: Exibe os conteúdos de uma tabela específica.
-- pesquisaValor: Pesquisa um valor específico em uma tabela.
+- pesquisaValor: Pesquisa e compara um valor em um coluna de uma tabela.
 - editarValorTabela: Permite ao usuário editar o valor de uma coluna em uma tabela.
 - deletarLinha: Permite ao usuário apagar uma linha específica de uma tabela.
 - deletarTabela: Permite ao usuário apagar uma tabela existente.
