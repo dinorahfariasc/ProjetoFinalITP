@@ -69,7 +69,8 @@ Lista todas as tabelas existentes, acessando o atributo `nomeTabela` de cada tab
 ```c
 void criarLinha(Tabela *todasTabelas, int todasTabelas_size)
 ```
-similar a funcao `criarTabela()` Permite ao usuário adicionar uma nova linha (registro) a uma tabela existente. Pede o nome de uma tabela existente bem como uma primary key diferente das demais para assim criar uma nova linha.
+similar a funcao `criarTabela()` Permite ao usuário adicionar uma nova linha (registro) a uma tabela existente. Pede o nome de uma tabela existente bem como uma primary key diferente das demais para assim criar uma nova linha. A função `salvarTabela()` é chamada ao final.
+
 
 ### `mostrarTabela` 
 ```c
@@ -87,10 +88,19 @@ Pesquisa e compara um valor em um coluna de uma tabela de acordo com o seu tipo.
 ```c
 void editarValorTabela(Tabela *todasTabelas, int todasTabelas_size);
 ```
-Permite ao usuário editar o valor de uma coluna em uma tabela apartir  do nome da tabela e do sua primary key (única), o usuario pode editar algum valor
+Permite ao usuário editar o valor de uma coluna em uma tabela apartir  do nome da tabela e do sua primary key (única), o usuario pode editar algum valor, a funcao `salvarTabela()` é chamada ao final.
 
-- deletarLinha: Permite ao usuário apagar uma linha específica de uma tabela.
-- deletarTabela: Permite ao usuário apagar uma tabela existente.
+### `deletarLinha`
+```c
+void deletarTabela(Tabela *todasTabelas, int *todasTabelas_size);
+```
+Permite ao usuário apagar uma linha específica de uma tabela, apartir do nome de uma tabela e da primary key que deseja excluir, a função `salvarTabela()` é chamada ao final.
+
+### `deletarTabela` 
+```c
+void deletarTabela(Tabela *todasTabelas, int *todasTabelas_size);
+```
+Permite ao usuário apagar uma tabela existente. apartir do nome de uma tabela, função `salvarTabela()` é chamada ao final.
 
 ## Contribuição
 o Projeto foi feito por Dinorah Farias e Flawbert Lorran, com a seguinte divisão por modulos:
