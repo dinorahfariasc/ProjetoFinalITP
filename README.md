@@ -122,3 +122,11 @@ Nosso código precisa de um melhor tratamento de erro
 
 
 ## Compilação e execução
+`Terminal Linux`: Executar o arquivo Makefile. No terminal Linux executar o comando:
+```c
+make
+```
+E após isso executar no terminal:
+```c
+./executar
+```
