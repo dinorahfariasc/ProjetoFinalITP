@@ -59,7 +59,7 @@ Permite ao usuário criar uma nova tabela especificando seu nome, colunas e valo
 
   
 ### `mostarTodas` 
-```
+```c
 void mostarTodas(Tabela *todasTabelas, int todasTabelas_size)
 ```
 Lista todas as tabelas existentes, acessando o atributo `nomeTabela` de cada tabela armazenada.
