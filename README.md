@@ -27,3 +27,13 @@ O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus pr�
 #include "exclusao.h"
 #include "visualizacao.h"
 ```
+
+## Outras Funções
+- criarTabela: Permite ao usuário criar uma nova tabela especificando seu nome, colunas e valores iniciais.
+- mostarTodas: Lista todas as tabelas existentes.
+- criarLinha: Permite ao usuário adicionar uma nova linha (registro) a uma tabela existente.
+- mostrarTabela: Exibe os conteúdos de uma tabela específica.
+- pesquisaValor: Pesquisa um valor específico em uma tabela.
+- editarValorTabela: Permite ao usuário editar o valor de uma coluna em uma tabela.
+- deletarLinha: Permite ao usuário apagar uma linha específica de uma tabela.
+- deletarTabela: Permite ao usuário apagar uma tabela existente.
