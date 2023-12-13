@@ -51,21 +51,21 @@ O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus pr�
 ```
 
 ## Funções Principais
-`criarTabela` 
+### `criarTabela` 
 ```
 void criarTabela(Tabela **todasTabelas, int *todasTabelas_size);
 ```
 Permite ao usuário criar uma nova tabela especificando seu nome, colunas e valores iniciais. de parametros inicias ela recebe todas as tabelas e seu tamanho. dentro da função recebemos um nome único, quantidade e tipo das colunas, nome das colunas, número de linhas e dados de cada linha. Após essa captação de dados é criado uma tabela do tipo `Tabela` e salva em `todasTabelas`, ao final tambem chamamos a função `salvarTabela()` para assim criarmos a tabela em um arquivo .txt
 
   
-`mostarTodas` 
+### `mostarTodas` 
 ```
 void mostarTodas(Tabela *todasTabelas, int todasTabelas_size)
 ```
 Lista todas as tabelas existentes, acessando o atributo `nomeTabela` de cada tabela armazenada.
 
 
-`criarLinha`
+### `criarLinha`
 ```
 void criarLinha(Tabela *todasTabelas, int todasTabelas_size)
 ```
