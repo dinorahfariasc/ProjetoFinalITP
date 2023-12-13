@@ -61,16 +61,16 @@ O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus pr�
 - deletarTabela: Permite ao usuário apagar uma tabela existente.
 
 ## Contribuição
-o Projeto foi feito por Dinorah Farias e Flawbert Lorran, e foi feita a seguinte divisão por modulos:
+o Projeto foi feito por Dinorah Farias e Flawbert Lorran, com a seguinte divisão por modulos:
 
 ### Dinorah
-* criacao.c
-* estruturas.c
-* visualizacao.c
+* criacao
+* estruturas
+* visualizacao
 
 ### Flawbert
-* edicao.c
-* exclusao.c
+* edicao
+* exclusao
 
 
 ***
