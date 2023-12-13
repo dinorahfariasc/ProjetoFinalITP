@@ -52,7 +52,7 @@ O projeto depende dos seguintes cabeçalhos padrão da linguagem C e de seus pr�
 
 ## Funções Principais
 ### `criarTabela` 
-```
+```c
 void criarTabela(Tabela **todasTabelas, int *todasTabelas_size);
 ```
 Permite ao usuário criar uma nova tabela especificando seu nome, colunas e valores iniciais. de parametros inicias ela recebe todas as tabelas e seu tamanho. dentro da função recebemos um nome único, quantidade e tipo das colunas, nome das colunas, número de linhas e dados de cada linha. Após essa captação de dados é criado uma tabela do tipo `Tabela` e salva em `todasTabelas`, ao final tambem chamamos a função `salvarTabela()` para assim criarmos a tabela em um arquivo .txt
@@ -66,14 +66,29 @@ Lista todas as tabelas existentes, acessando o atributo `nomeTabela` de cada tab
 
 
 ### `criarLinha`
-```
+```c
 void criarLinha(Tabela *todasTabelas, int todasTabelas_size)
 ```
 similar a funcao `criarTabela()` Permite ao usuário adicionar uma nova linha (registro) a uma tabela existente. Pede o nome de uma tabela existente bem como uma primary key diferente das demais para assim criar uma nova linha.
 
-- mostrarTabela: Exibe os conteúdos de uma tabela específica.
-- pesquisaValor: Pesquisa e compara um valor em um coluna de uma tabela.
-- editarValorTabela: Permite ao usuário editar o valor de uma coluna em uma tabela.
+### `mostrarTabela` 
+```c
+void mostrarTabela(Tabela *todasTabelas, int todasTabelas_size)
+```
+Verifica se existe alguma tabela com n nome e se existir exibe a mesma. Usamos a `funcao strcmp()` para comparar o nome recebido aos existentes. Tambem utilizmos a funcao `exibirValorFormatado()` para que nossa saida seja de acordo com o tipo de cada coluna.
+
+### `pesquisaValor` 
+```c
+void pesquisaValor(Tabela *todasTabelas, int todasTabelas_size);
+```
+Pesquisa e compara um valor em um coluna de uma tabela de acordo com o seu tipo. em caso de busca em coluna do tipo string usamos a funcao `pesquisarString()` que usa a função `srtsrt()` para encontrar uma substring.
+ 
+### `editarValorTabela` 
+```c
+void editarValorTabela(Tabela *todasTabelas, int todasTabelas_size);
+```
+Permite ao usuário editar o valor de uma coluna em uma tabela apartir  do nome da tabela e do sua primary key (única), o usuario pode editar algum valor
+
 - deletarLinha: Permite ao usuário apagar uma linha específica de uma tabela.
 - deletarTabela: Permite ao usuário apagar uma tabela existente.
 
