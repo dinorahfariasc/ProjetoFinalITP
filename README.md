@@ -114,6 +114,9 @@ o Projeto foi feito por Dinorah Farias e Flawbert Lorran, com a seguinte divisã
 * edicao
 * exclusao
 
+### Pontos de melhoria
+Nosso código precisa de um melhor tratamento de erro
+
 
 ***
 
