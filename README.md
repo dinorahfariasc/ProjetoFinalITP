@@ -1,6 +1,8 @@
 # Sistema de Gerenciamento de Banco de Dados - ITP
 Este é um sistema simples de gerenciamento de tabelas em C. O projeto é estruturado em módulos separados para as operações de criação, edição, exclusão e visualização de tabelas. Abaixo, fornecemos uma visão geral da estrutura do projeto, suas dependências e principais funções.
 
+- `Link para a apresentação no Youtube`: https://www.youtube.com/watch?v=nXf1zevyJ8g
+
 ## Estrutura do Projeto
 
 O projeto é composto por vários módulos organizados em arquivos separados:
